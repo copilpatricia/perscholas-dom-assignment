@@ -51,7 +51,6 @@ function userNameValid() {
     errMsg.style.display = "block";
     errMsg.innerHTML = "The username cannot be blank!";
     userName.focus();
-    console.log("Error: The username cannot be blank!");
     return false;
   } else {
     errMsg.style.display = "none";
@@ -188,7 +187,6 @@ function loginUserName(){
         errMsg.style.display = "block";
         errMsg.innerHTML = "The username cannot be blank!";
         userNameLogin.focus();
-        console.log("Error: The username cannot be blank!");
         return false;
       } else {
         errMsg.style.display = "none";
@@ -201,9 +199,8 @@ function loginUserName(){
 function passwordUserName(){
     if (passwordLogin.value === "") {
         errMsg.style.display = "block";
-        errMsg.innerHTML = "The username cannot be blank!";
+        errMsg.innerHTML = "The password cannot be blank!";
         passwordLogin.focus();
-        console.log("Error: The password cannot be blank!");
         return false;
       } else {
         errMsg.style.display = "none";
