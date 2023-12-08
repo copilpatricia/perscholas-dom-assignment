@@ -1,0 +1,21 @@
+// New things that I learned
+
+// 1. new Set validation - two uniques characters
+// new Set(userName.value): This creates a set from the characters of the username. A set is a data structure that only allows unique elements. So, if the username is "aaabbb," the set will only contain "a" and "b" once each.
+// uniqueChars.size: This gives the number of unique characters in the set.
+// if (uniqueChars.size < 2): This condition checks if there are fewer than two unique characters in the username. If there are fewer than two unique characters, it means that the username consists of repeated characters, and the validation fails.
+
+//2. regex validation for the email
+// const regexValidEmail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+// It checks that an email address consists of one or more word characters, followed by an "@" symbol, followed by one or more word characters, and then a dot with two or three characters. This is a typical pattern for email validation.
+
+// 3. regex validation for the password
+//  const regexValidPassword =  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{12,}$/;
+// The password must contain: 12 characters, one uppercase and one lowercase letter, at least one number, at least one special character
+
+
+
+// purpose of the return false after every check and the final return true
+<!-- if any of the validation functions (userNameValid, emailValid, passwordValid) returns false, it will prevent the form submission and return false. If all validations pass, it will reach the end of the function and return true. This should ensure that the form submission is prevented when there are validation errors. -->
+
+<!-- In the validate function, I am checking these returned values and, if any of them is false, you are preventing the form submission by calling event.preventDefault() and returning false from the validate function. -->
