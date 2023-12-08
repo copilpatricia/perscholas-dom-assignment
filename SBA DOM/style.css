@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+#nav-id {
+  width: 100%;
+  height: 20px;
+  background-color: green;
+  display: flex;
+}
