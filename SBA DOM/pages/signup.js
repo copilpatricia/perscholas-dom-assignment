@@ -7,10 +7,10 @@ let availW = window.screen.availWidth;
 //iterate over a collection of elements
 links.forEach((link, i) => {
         if(i === 0){
-            link.setAttribute("href", "index.html")
+            link.setAttribute("href", "../index.html")
             console.log(link);
         }else if(i === 1) {
-            link.setAttribute("href", "./pages/signup.html")
+            link.setAttribute("href", "signup.html")
             console.log(link);
         }else if(i === 2){
             link.setAttribute("href", "#contact")
@@ -48,10 +48,5 @@ title.addEventListener("click", ()=> {
         title.classList.remove("title-spanish")
     }
 })
-
-// insert an img
-const img = document.createElement("img");
-main.appendChild(img);
-title.nextElementSibling.setAttribute("src","./images/christmas_pic.jpg");
 
 
