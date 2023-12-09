@@ -1,6 +1,7 @@
 const navbar = document.getElementById("nav-id");
 const links = document.querySelectorAll("a");
 
+//iterate over a collection of elements
 links.forEach((link, i) => {
         if(i === 0){
             link.setAttribute("href", "#about")
@@ -20,6 +21,7 @@ const title = document.createElement("h1")
 main.appendChild(title)
 title.textContent = "Merry Christmas!";
 
+//modify the text content based on the user interaction
 title.addEventListener("click", ()=> {
     if(title.textContent === "Merry Christmas!"){
         title.textContent = "Feliz navidad!"
@@ -30,7 +32,7 @@ title.addEventListener("click", ()=> {
     }
 })
 
+// insert an img
 const img = document.createElement("img");
 main.appendChild(img);
-
-console.log(title.nextElementSibling)
+title.nextElementSibling.setAttribute("src","./images/christmas_pic.jpg")
