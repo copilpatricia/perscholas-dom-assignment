@@ -29,7 +29,15 @@ eventLink.addEventListener("click",()=>{
     window.focus();
 })
 
+// form validation
 
+const form = document.getElementById("registration");
+
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(){
+    console.log("pati")
+}
 
 
 
