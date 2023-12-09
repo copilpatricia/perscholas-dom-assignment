@@ -8,10 +8,8 @@ let availW = window.screen.availWidth;
 links.forEach((link, i) => {
         if(i === 0){
             link.setAttribute("href", "../index.html")
-            console.log(link);
         }else if(i === 1) {
             link.setAttribute("href", "signup.html")
-            console.log(link);
         }else if(i === 2){
             link.setAttribute("href", "#contact")
             eventLink = link
@@ -32,21 +30,9 @@ eventLink.addEventListener("click",()=>{
 })
 
 
-const main = document.createElement("main");
-document.body.appendChild(main)
-const title = document.createElement("h1")
-main.appendChild(title)
-title.textContent = "Merry Christmas!";
 
-//modify the text content based on the user interaction
-title.addEventListener("click", ()=> {
-    if(title.textContent === "Merry Christmas!"){
-        title.textContent = "Feliz navidad!"
-        title.classList.add("title-spanish")
-    }else if(title.textContent === "Feliz navidad!"){
-        title.textContent = "Merry Christmas!"
-        title.classList.remove("title-spanish")
-    }
-})
+
+
+
 
 
