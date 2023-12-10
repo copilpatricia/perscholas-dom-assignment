@@ -58,9 +58,11 @@ body {
   }
 
   #errorMsg {
-    background-color: yellow;
-    width: 200px;
-    height: 100px;
+    background-color: #bb010b;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+    padding: 20px;
     display: none;
   }
   
