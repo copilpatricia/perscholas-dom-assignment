@@ -164,19 +164,17 @@ const passwordLogin = formLogin.elements["password"];
 
 formLogin.addEventListener("submit", validateLogin);
 
-function validateLogin(event){
-    event.preventDefault();
-    
+function validateLogin(event){    
     const userNameLogin = loginUserName();
     if(userNameLogin === false){
         event.preventDefault();
-        return false
+        return false;
     }
 
     const passwordLogin = passwordUserName();
     if(passwordLogin === false){
         event.preventDefault();
-        return false
+        return false;
     }
     return true;
 };
