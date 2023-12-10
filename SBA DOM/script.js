@@ -37,11 +37,11 @@ title.textContent = "Merry Christmas!";
 //modify the text content based on the user interaction
 title.addEventListener("click", () => {
   if (title.textContent === "Merry Christmas!") {
-    title.textContent = "Feliz navidad!";
-    title.classList.add("title-spanish");
-  } else if (title.textContent === "Feliz navidad!") {
+    title.textContent = "Crăciun fericit!";
+    title.classList.add("title-romanian");
+  } else if (title.textContent === "Crăciun fericit!") {
     title.textContent = "Merry Christmas!";
-    title.classList.remove("title-spanish");
+    title.classList.remove("title-romanian");
   }
 });
 
