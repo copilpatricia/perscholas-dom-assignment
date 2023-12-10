@@ -32,11 +32,30 @@ eventLink.addEventListener("click",()=>{
 // form validation
 
 const form = document.getElementById("registration");
+const userName = document.getElementById("username");
+const passwordCheck = document.getElementById("passwordCheck");
+const errorMsg = document.getElementById("errorMsg");
 
 form.addEventListener("submit", handleSubmit);
 
-function handleSubmit(){
-    console.log("pati")
+function handleSubmit(event){
+    const userNameValue = validateUserName();
+    if(userNameValue === false){
+        event.preventDefault()
+    }
+}
+
+
+function validateUserName() {
+    if(userName.value === ""){
+        errorMsg.style.display = "block";
+        errorMsg.textContent ="User name cannot be empty"
+        return false
+    }else {
+        errorMsg.style.display = "none"
+    }
+
+    return userName.value
 }
 
 
