@@ -8,10 +8,8 @@ let availW = window.screen.availWidth;
 links.forEach((link, i) => {
         if(i === 0){
             link.setAttribute("href", "index.html")
-            console.log(link);
         }else if(i === 1) {
             link.setAttribute("href", "./pages/signup.html")
-            console.log(link);
         }else if(i === 2){
             link.setAttribute("href", "#contact")
             eventLink = link
