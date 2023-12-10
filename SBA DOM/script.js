@@ -54,4 +54,11 @@ const img = document.createElement("img");
 main.appendChild(img);
 title.nextElementSibling.setAttribute("src","./images/christmas_pic.jpg");
 
-
+img.addEventListener("click", () => {
+    currentSrc = img.getAttribute("src")
+    if(currentSrc === "./images/christmas_pic.jpg"){
+        img.setAttribute("src", "./images/noel_pic.jpg")
+    }else if(currentSrc === "./images/noel_pic.jpg"){
+        img.setAttribute("src", "./images/christmas_pic.jpg")
+    }
+})
